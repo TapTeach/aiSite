@@ -1,0 +1,863 @@
+
+
+<!doctype html>
+<!-- Current build version: 1.0.0 -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>VMLY&R | Style Guide</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1">
+    <script>window.MSInputMethodContext && document.documentMode && document.write(' <!--Custom props for IE11 only so css vars work-->\n<script src="/assets/scripts/e11CustomProperties.js"><\x2fscript>');</script>
+
+    <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../assets/styles/sguide.css?v=1.0.0">
+    <link rel="stylesheet" href="../assets/styles/style.css?v=1.0.0">
+    <style>
+      @font-face {
+        font-family: 'yrthree';
+        src: url('https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/fonts/yrthree/yrthree-light.woff2') format('woff2'),
+             url('https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/fonts/yrthree/yrthree-light.woff') format('woff'),
+             url('https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/fonts/yrthree/yrthree-light.ttf') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+      }
+      
+      @font-face {
+        font-family: 'yrthree';
+        src: url('https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/fonts/yrthree/yrthree-black.woff2') format('woff2'),
+             url('https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/fonts/yrthree/yrthree-black.woff') format('woff'),
+             url('https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/fonts/yrthree/yrthree-black.ttf') format('truetype');
+        font-weight: 900;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'icon-font';
+        src: url('https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/fonts/iconfont/icon-font.woff2') format('woff2'),
+          url('https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/fonts/iconfont/icon-font.woff') format('woff'),
+          url('https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/fonts/iconfont/icon-font.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
+    <script>
+      window.nbApp = {};
+    </script>
+  </head>
+
+  <body class="node-docs">
+    <div class="app">
+      
+<header class="layout-header   " data-header>
+  <div class="container-xl">
+    
+    <a href="/" class=" "><img src="../assets/images/logo.png" alt="A logo of VMLY&amp;R." class="logo "></a>
+    <button type="button" class="hamburger hamburger--open  "  aria-label="Open menu" data-hamburger-open></button>
+  </div>
+</header>
+
+<nav class="headerNav" data-nav>
+  <button type="button" class="hamburger hamburger--close" aria-label="Close menu" data-hamburger-close></button>
+  <div class="headerNav__track">
+    <ul class="headerNav__menu headerNav__menu--compact">
+                        <li>
+            <span class="headerNav__title">Layout</span>
+                          <ul>
+                                                                      <li>
+                    <a href="/docs/container.html" class=" " >Container</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/display.html" class=" " >Display</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/grid.html" class="is-active " >Grid</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/hide-show.html" class=" " >Hide &amp; Show</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/overflow.html" class=" " >Overflow</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/position.html" class=" " >Position</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/spacing.html" class=" " >Padding &amp; Margin</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/gutter.html" class=" " >Gutter</a>
+                  </li>
+                              </ul>
+                      </li>
+                                <li>
+            <span class="headerNav__title">Typography</span>
+                          <ul>
+                                                                      <li>
+                    <a href="/docs/font-weight.html" class=" " >Font Weight</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/letter-spacing.html" class=" " >Letter Spacing</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/line-height.html" class=" " >Line Height</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/links.html" class=" " >Links</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/type-sets.html" class=" " >Type Sets</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/text-style.html" class=" " >Text Styles &amp; Decoration</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/text-alignment.html" class=" " >Text Alignment</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/vertical-alignment.html" class=" " >Vertical Alignment</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/text-wrapping.html" class=" " >Whitespace &amp; Wrapping</a>
+                  </li>
+                              </ul>
+                      </li>
+                                <li>
+            <span class="headerNav__title">Other</span>
+                          <ul>
+                                                                      <li>
+                    <a href="/docs/color.html" class=" " >Color</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/backgrounds.html" class=" " >Backgrounds</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/hr.html" class=" " >Horizontal Rule</a>
+                  </li>
+                                                                      <li>
+                    <a href="/examples.html" class=" " >Examples</a>
+                  </li>
+                              </ul>
+                      </li>
+                                <li>
+            <span class="headerNav__title">Components</span>
+                          <ul>
+                                                                      <li>
+                    <a href="/docs/iconography.html" class=" " >Iconography</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/buttons.html" class=" " >Buttons</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/accordion.html" class=" " >Accordion</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/intro.html" class=" " >Intro</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/figure.html" class=" " >Figure</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/gallery.html" class=" " >Gallery</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/logowall.html" class=" " >Logowall</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/carousel.html" class=" " >Carousel</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/spotlight.html" class=" " >Spotlight</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/masonry-grid.html" class=" " >Masonry Grid</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/masonry-search.html" class=" " >Masonry Search</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/silo.html" class=" " >Silo</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/video.html" class=" " >Video</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/map.html" class=" " >Map</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/speed-bump.html" class=" " >Speed Bump</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/team.html" class=" " >Team</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/scroll.html" class=" " >Scroll</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/speaker.html" class=" " >Speaker</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/contact.html" class=" " >Contact</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/wysiwyg.html" class=" " >Wysiwyg</a>
+                  </li>
+                                                                      <li>
+                    <a href="/docs/form.html" class=" " >Form</a>
+                  </li>
+                              </ul>
+                      </li>
+              
+      
+    </ul>
+  </div>
+</nav>
+
+      <main data-module="global">
+          <article class="docsWrapper" data-module="docs">
+    <div class="docsWrapper__content vg-1">
+        <header class="container-xl">
+    <div class="sg-comments">
+      <h1 class="type-h3">Flexbox Grid</h1>
+      <ul>
+        <li>12 columns</li>
+        <li>Use <code>col-</code> plus number of columns to define width. Example: <code>col-4</code></li>
+        <li>Add responsive modifiers to trigger different column widths, sorting, or positioning by breakpoint <code> xs:, sm:, md:, lg:, xl:</code></li>
+        <li>A set of columns must be wrapped with the <code>.row</code> wrapper.</li>
+        <li>Any set of columns inside of a <code>.row</code> that do not equal to 100% will wrap to a new line.</li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="container-xl">
+    <div class="sg-comments">
+      <h2 class="type-h4">Row Gutter</h2>
+    </div>
+
+    <div class="sg-example">
+      <code>.row</code>
+        <div class="row mb-2">
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+        </div>
+  
+        <code>.row--gutter-narrow</code>
+        <div class="row row--gutter-narrow mb-2">
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+        </div>
+  
+        <code>.row--gutter-wide</code>
+        <div class="row row--gutter-wide mb-2">
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+        </div>
+  
+        <code>.row--gutter-wide-lg</code>
+        <div class="row row--gutter-wide-lg mb-2">
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+        </div>
+  
+        <code>.row--gutter-gapless</code>
+        <div class="row row--gutter-gapless mb-2">
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+        </div>
+  
+        <code>.row--columns</code>
+        <div class="row row--columns">
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+          <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+        </div>
+      </div>
+
+    <pre><code class="language-twig.line-numbers">{# margin left and right set to -$spacing-unit = 10px #}
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-12&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+{# margin left and right set to -$spacing-unit / 2 #}
+&lt;div class=&quot;row row--gutter-narrow&quot;&gt;
+  &lt;div class=&quot;col-12&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+{# margin left and right set to -$spacing-unit * 2  #}
+&lt;div class=&quot;row row--gutter-wide&quot;&gt;
+  &lt;div class=&quot;col-12&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+{# gutter-wide will on show on breakpoint &gt;=lg #}
+&lt;div class=&quot;row row--gutter-wide-lg&quot;&gt;
+  &lt;div class=&quot;col-12&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+{# margin left and right set to 0 #}
+&lt;div class=&quot;row row--gutter-gapless&quot;&gt;
+  &lt;div class=&quot;col-12&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+{# row direction is columns and .reverse will reverse the direction #}
+&lt;div class=&quot;row row--columns&quot;&gt;
+  &lt;div class=&quot;col-12&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </section>
+
+  <section class="container-xl">
+    <div class="sg-comments">
+      <h2 class="type-h4">Default</h2>
+    </div>
+
+    <div class="sg-example">
+      <div class="row">
+        <div class="col-12"><p class="ebox">col-12</p></div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 sm:col-6"><p class="ebox">col-6</p></div>
+        <div class="col-12 sm:col-6"><p class="ebox">col-6</p></div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 sm:col-4"><p class="ebox">col-4</p></div>
+        <div class="col-12 sm:col-4"><p class="ebox">col-4</p></div>
+        <div class="col-12 sm:col-4"><p class="ebox">col-4</p></div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 sm:col-3"><p class="ebox">col-3</p></div>
+        <div class="col-12 sm:col-3"><p class="ebox">col-3</p></div>
+        <div class="col-12 sm:col-3"><p class="ebox">col-3</p></div>
+        <div class="col-12 sm:col-3"><p class="ebox">col-3</p></div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+        <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+        <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+        <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+        <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+        <div class="col-12 sm:col-2"><p class="ebox">col-2</p></div>
+      </div>
+    </div>
+
+    <pre><code class="language-html.line-numbers">&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-12&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-6&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;col-6&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-4&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;col-4&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;col-4&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </section>
+
+  <section class="container-xl">
+    <div class="sg-comments">
+      <h2 class="type-h4">Responsive</h2>
+    </div>
+
+    <div class="sg-example">
+      <div class="row">
+        <div class="col-12 md:col-4 lg:col-6"><p class="ebox">[resize browser]</p></div>
+      </div>
+    </div>
+
+    <pre><code class="language-html.line-numbers">&lt;!--
+// col-12: by default the column will be 100%
+// lg:col-6: while in a large viewport, the column will be 50% (12/12)
+// md:col-4: while in a medium viewport, the column will be 33% (4/12)
+--&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-12 sm:col-6 md:col-4 lg:col-3&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </section>
+
+  <section class="container-xl">
+    <div class="sg-comments">
+      <h2 class="type-h4">Auto</h2>
+      <ul>
+        <li>Add any number of columns to a row and each column will be the same width.</li>
+        <li>Perfect for when having an odd numnber of columns that is not divisible by 12.</li>
+        <li>Can be utilized to fill up remaining amount of space in conjunction with a column that has a defined width.</li>
+      </ul>
+    </div>
+
+    <div class="sg-example">
+      <div class="row">
+        <div class="col-auto"><p class="ebox">col-auto</p></div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 sm:col-auto"><p class="ebox">col-auto</p></div>
+        <div class="col-12 sm:col-5"><p class="ebox">col-5</p></div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 sm:col-auto"><p class="ebox">col-auto</p></div>
+        <div class="col-12 sm:col-auto"><p class="ebox">col-auto</p></div>
+        <div class="col-12 sm:col-auto"><p class="ebox">col-auto</p></div>
+        <div class="col-12 sm:col-auto"><p class="ebox">col-auto</p></div>
+        <div class="col-12 sm:col-auto"><p class="ebox">col-auto</p></div>
+      </div>
+    </div>
+
+    <pre><code class="language-html.line-numbers">&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-auto&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-auto&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;col-5&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-auto&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;col-auto&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;col-auto&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;col-auto&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;col-auto&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </section>
+
+  <section class="container-xl">
+    <div class="sg-comments">
+      <h2 class="type-h4">Variable</h2>
+      <ul>
+        <li>Takes on the width of the content inside of the column.</li>
+        <li>Best utilized with content that has a max-width or set width.</li>
+        <li>Variable columns work great with positioning helper classes.</li>
+        <li>If the column does not fit inside of the row, the column will wrap to new line.</li>
+      </ul>
+    </div>
+
+    <div class="sg-example">
+      <div class="row">
+        <div class="col-variable"><p class="ebox">col-variable</p></div>
+        <div class="col-variable"><p class="ebox">[I am taking on the width of content]</p></div>
+      </div>
+    </div>
+
+    <pre><code class="language-html.line-numbers">&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-variable&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;col-variable&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </section>
+
+  <section class="container-xl">
+    <div class="sg-comments">
+      <h2 class="type-h4">Offset</h2>
+      <ul>
+        <li>Offset content from left side.</li>
+        <li>Offset values range from 1-12.</li>
+      </ul>
+    </div>
+
+    <div class="sg-example">
+      <div class="row">
+        <div class="col-offset-1 col-auto"><p class="ebox">col-offset-1</p></div>
+      </div>
+      <div class="row">
+        <div class="col-offset-2 col-auto"><p class="ebox">col-offset-2</p></div>
+      </div>
+      <div class="row">
+        <div class="col-offset-3 col-auto"><p class="ebox">col-offset-3</p></div>
+      </div>
+      <div class="row">
+        <div class="col-offset-4 col-auto"><p class="ebox">col-offset-4</p></div>
+      </div>
+      <div class="row">
+        <div class="col-offset-5 col-auto"><p class="ebox">col-offset-5</p></div>
+      </div>
+      <div class="row">
+        <div class="col-offset-6 col-auto"><p class="ebox">col-offset-6</p></div>
+      </div>
+      <div class="row">
+        <div class="col-offset-7 col-auto"><p class="ebox">col-offset-7</p></div>
+      </div>
+      <div class="row">
+        <div class="col-offset-8 col-auto"><p class="ebox">col-offset-8</p></div>
+      </div>
+      <div class="row">
+        <div class="col-offset-9 col-auto"><p class="ebox">col-offset-9</p></div>
+      </div>
+    </div>
+
+    <pre><code class="language-html.line-numbers">&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-offset-1 col-auto&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-offset-4 col-5&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </section>
+
+  <section class="container-xl">
+    <div class="sg-comments">
+      <h2 class="type-h4">Align Items</h2>
+      <ul>
+        <li>Column positioning along the cross axis.</li>
+        <li>By default the column behavior is to use stretch.</li>
+        <li>Add responsive modifiers <code> xs:, sm:, md:, lg:, xl:</code></li>
+      </ul>
+    </div>
+    <div class="sg-example">
+      <div class="sg-row sg-row--fshort">
+        <div class="row row--gutter-narrow">
+          <div class="col-auto"><div class="ebox"></div></div>
+          <div class="col-auto"><div class="ebox"></div></div>
+          <div class="col-auto"><div class="ebox"></div></div>
+        </div>
+      </div>
+      <pre><code class="language-html.line-numbers">&lt;div class=&quot;row&quot;&gt;
+  ...
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="sg-example">
+      <code>items-start</code>
+      <div class="sg-row">
+        <div class="row row--gutter-narrow items-start">
+          <div class="col-auto"><div class="ebox ebox--short"></div></div>
+          <div class="col-auto"><div class="ebox ebox--tall"></div></div>
+          <div class="col-auto"><div class="ebox ebox--short"></div></div>
+        </div>
+      </div>
+      <pre><code class="language-html.line-numbers">&lt;div class=&quot;row items-start&quot;&gt;
+  ...
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="sg-example">
+      <code>items-center</code>
+      <div class="sg-row">
+        <div class="row row--gutter-narrow items-center">
+          <div class="col-auto"><div class="ebox ebox--short"></div></div>
+          <div class="col-auto"><div class="ebox ebox--tall"></div></div>
+          <div class="col-auto"><div class="ebox ebox--short"></div></div>
+        </div>
+      </div>
+      <pre><code class="language-html.line-numbers">&lt;div class=&quot;row items-center&quot;&gt;
+  ...
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="sg-example">
+      <code>items-end</code>
+      <div class="sg-row">
+        <div class="row row--gutter-narrow items-end">
+          <div class="col-auto"><div class="ebox ebox--short"></div></div>
+          <div class="col-auto"><div class="ebox ebox--tall"></div></div>
+          <div class="col-auto"><div class="ebox ebox--short"></div></div>
+        </div>
+      </div>
+      <pre><code class="language-html.line-numbers">&lt;div class=&quot;row items-end&quot;&gt;
+  ...
+&lt;/div&gt;</code></pre>
+    </div>
+  </section>
+
+  <section class="container-xl">
+    <div class="sg-comments">
+      <h2 class="type-h4">Align Content</h2>
+      <ul>
+        <li>Column positioning in multi-line rows.</li>
+        <li>Will only work if there are multiple lines of columns.</li>
+        <li>Your row container must have a fixed or height greater than the column height.</li>
+        <li>Add responsive modifiers <code> xs:, sm:, md:, lg:, xl:</code></li>
+      </ul>
+    </div>
+    <div class="sg-example">
+      <code>content-start</code>
+      <div class="sg-row sg-row--ftall">
+        <div class="row row--gutter-narrow content-start">
+          <div class="col-4"><div class="ebox ebox--short"></div></div>
+          <div class="col-4"><div class="ebox ebox--short"></div></div>
+          <div class="col-4"><div class="ebox ebox--short"></div></div>
+          <div class="col-4"><div class="ebox ebox--short"></div></div>
+          <div class="col-4"><div class="ebox ebox--short"></div></div>
+        </div>
+      </div>
+      <pre><code class="language-html.line-numbers">&lt;div class=&quot;row content-start&quot;&gt;
+  ...
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="sg-example">
+      <code>content-center</code>
+      <div class="sg-row sg-row--ftall">
+        <div class="row row--gutter-narrow content-center">
+          <div class="col-4"><div class="ebox ebox--short"></div></div>
+          <div class="col-4"><div class="ebox ebox--short"></div></div>
+          <div class="col-4"><div class="ebox ebox--short"></div></div>
+          <div class="col-4"><div class="ebox ebox--short"></div></div>
+          <div class="col-4"><div class="ebox ebox--short"></div></div>
+        </div>
+      </div>
+      <pre><code class="language-html.line-numbers">&lt;div class=&quot;row content-center&quot;&gt;
+  ...
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="sg-example">
+      <code>content-end</code>
+      <div class="sg-row sg-row--ftall">
+        <div class="row row--gutter-narrow content-end">
+          <div class="col-4"><div class="ebox ebox--short"></div></div>
+          <div class="col-4"><div class="ebox ebox--short"></div></div>
+          <div class="col-4"><div class="ebox ebox--short"></div></div>
+          <div class="col-4"><div class="ebox ebox--short"></div></div>
+          <div class="col-4"><div class="ebox ebox--short"></div></div>
+        </div>
+      </div>
+      <pre><code class="language-html.line-numbers">&lt;div class=&quot;row content-end&quot;&gt;
+  ...
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="sg-example">
+      <code>content-around</code>
+      <div class="sg-row sg-row--ftall">
+        <div class="row row--gutter-narrow content-around">
+          <div class="col-4"><div class="ebox ebox--short"></div></div>
+          <div class="col-4"><div class="ebox ebox--short"></div></div>
+          <div class="col-4"><div class="ebox ebox--short"></div></div>
+          <div class="col-4"><div class="ebox ebox--short"></div></div>
+          <div class="col-4"><div class="ebox ebox--short"></div></div>
+        </div>
+      </div>
+      <pre><code class="language-html.line-numbers">&lt;div class=&quot;row content-around&quot;&gt;
+  ...
+&lt;/div&gt;</code></pre>
+    </div>
+    <div class="sg-example">
+      <code>content-between</code>
+      <div class="sg-row sg-row--ftall">
+        <div class="row row--gutter-narrow content-between">
+          <div class="col-4"><div class="ebox ebox--short"></div></div>
+          <div class="col-4"><div class="ebox ebox--short"></div></div>
+          <div class="col-4"><div class="ebox ebox--short"></div></div>
+          <div class="col-4"><div class="ebox ebox--short"></div></div>
+          <div class="col-4"><div class="ebox ebox--short"></div></div>
+        </div>
+      </div>
+      <pre><code class="language-html.line-numbers">&lt;div class=&quot;row content-between&quot;&gt;
+  ...
+&lt;/div&gt;</code></pre>
+    </div>
+  </section>
+
+  <section class="container-xl">
+    <div class="sg-comments">
+      <h2 class="type-h4">Justify Content</h2>
+      <ul>
+        <li>Column positioning along the main axis.</li>
+        <li>Add responsive modifiers <code> xs:, sm:, md:, lg:, xl:</code></li>
+      </ul>
+    </div>
+    <div class="sg-example">
+      <code>justify-start</code>
+      <div class="sg-row">
+        <div class="row row--gutter-narrow justify-start">
+          <div class="col-3"><div class="ebox ebox--short"></div></div>
+          <div class="col-3"><div class="ebox ebox--short"></div></div>
+        </div>
+      </div>
+      <pre><code class="language-html.line-numbers">&lt;div class=&quot;row justify-start&quot;&gt;
+  ...
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="sg-example">
+      <code>justify-center</code>
+      <div class="sg-row">
+        <div class="row row--gutter-narrow justify-center">
+          <div class="col-3"><div class="ebox ebox--short"></div></div>
+          <div class="col-3"><div class="ebox ebox--short"></div></div>
+        </div>
+      </div>
+      <pre><code class="language-html.line-numbers">&lt;div class=&quot;row justify-center&quot;&gt;
+  ...
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="sg-example">
+      <code>justify-end</code>
+      <div class="sg-row">
+        <div class="row row--gutter-narrow justify-end">
+          <div class="col-3"><div class="ebox ebox--short"></div></div>
+          <div class="col-3"><div class="ebox ebox--short"></div></div>
+        </div>
+      </div>
+      <pre><code class="language-html.line-numbers">&lt;div class=&quot;row justify-end&quot;&gt;
+  ...
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="sg-example">
+      <code>justify-around</code>
+      <div class="sg-row">
+        <div class="row row--gutter-narrow justify-around">
+          <div class="col-3"><div class="ebox ebox--short"></div></div>
+          <div class="col-3"><div class="ebox ebox--short"></div></div>
+        </div>
+      </div>
+      <pre><code class="language-html.line-numbers">&lt;div class=&quot;row justify-around&quot;&gt;
+  ...
+&lt;/div&gt;</code></pre>
+    </div>
+    <div class="sg-example">
+      <code>justify-between</code>
+      <div class="sg-row">
+        <div class="row row--gutter-narrow justify-between">
+          <div class="col-3"><div class="ebox ebox--short"></div></div>
+          <div class="col-3"><div class="ebox ebox--short"></div></div>
+        </div>
+      </div>
+      <pre><code class="language-html.line-numbers">&lt;div class=&quot;row justify-between&quot;&gt;
+  ...
+&lt;/div&gt;</code></pre>
+    </div>
+  </section>
+    </div>
+  </article>
+      </main>
+
+      <footer class="layout-footer align-center">
+  <div class="vg-3 bg-gray-dark hide" id="recognition">
+    <div class="container-xl">
+      <h2 class="align-center font-light type-h3 mb-2">Industry Recognition</h2>
+      <div class="row row--gutter-wide items-center justify-center">
+        <div class="col-6 md:col-2 hide"><img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/awards/3percent.png" alt="" class="block"></div>
+        <div class="col-6 md:col-2"><img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/awards/adage.png" alt="" class="block"></div>
+        <div class="col-6 md:col-2"><img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/awards/cannes.png" alt="" class="block"></div>
+        <div class="col-6 md:col-2"><img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/awards/effie.png" alt="" class="block"></div>
+        <div class="col-6 md:col-2"><img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/awards/forrester.png" alt="" class="block"></div>
+        <div class="col-6 md:col-2"><img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/awards/gartner.png" alt="" class="block"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="vg-2">
+    <div class="container-lg">
+      <h5 class="font-normal mb-1">Thank you.</h5>
+      <ul class="row row--gutter-wide justify-center list-reset social">
+        <li class="col-variable"><a href="https://www.instagram.com/vmlyr/" class="block" target="_blank">      <svg viewBox="0 0 1 1" class="iconography" size="sm" color="white">
+      <use xlink:href="../assets/icons/icons.svg#social-instagram"></use>
+    </svg>
+  </a></li>
+        <li class="col-variable"><a href="https://www.facebook.com/VMLYR/" class="block" target="_blank">      <svg viewBox="0 0 1 1" class="iconography" size="sm" color="white">
+      <use xlink:href="../assets/icons/icons.svg#social-facebook"></use>
+    </svg>
+  </a></li>
+        <li class="col-variable"><a href="https://twitter.com/VMLYR" class="block" target="_blank">      <svg viewBox="0 0 1 1" class="iconography" size="sm" color="white">
+      <use xlink:href="../assets/icons/icons.svg#social-twitter"></use>
+    </svg>
+  </a></li>
+        <li class="col-variable"><a href="https://www.linkedin.com/company/vmlyr/" class="block" target="_blank">      <svg viewBox="0 0 1 1" class="iconography" size="sm" color="white">
+      <use xlink:href="../assets/icons/icons.svg#social-linkedin"></use>
+    </svg>
+  </a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="pb-2">
+    <div class="container-lg">
+      <p class="type-xs">
+        <span class="mr-1">A Member of WPP</span> 
+        <span class="mr-1">|</span> 
+        <span class="mr-1">Copyright © 2020 VMLY&amp;R</span> 
+        <span class="mr-1">|</span> 
+        <span class="mr-1"><a href="https://www.vmlyr.com/privacy-policy" class="link underline-none" target="_blank">Privacy Policy</a></span> 
+        <span class="mr-1">|</span> 
+        <span class="mr-1"><a href="https://www.vmlyr.com/cookie-policy" class="link underline-none" target="_blank">Cookie Policy</a></span> 
+        <span class="mr-1">|</span> 
+        <a href="https://www.vmlyr.com/terms-and-conditions" class="link underline-none" target="_blank">Terms and Conditions</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<div class="navOverlay" aria-hidden="true" data-hamburger-close></div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyA2b1Mb0SW12nkVGwqULb6GcLX3tS7ireY",
+    authDomain: "mobility-426be.firebaseapp.com",
+    databaseURL: "https://mobility-426be.firebaseio.com",
+    projectId: "mobility-426be",
+    storageBucket: "mobility-426be.appspot.com",
+    messagingSenderId: "668999618946",
+    appId: "1:668999618946:web:7a69cf20d56ba20edcff9b",
+    measurementId: "G-PJ85G98FZF"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+  </body>
+
+  <script type="text/javascript" src="../assets/scripts/jquery.js?v=1.0.0"></script>
+  <script type="text/javascript" src="../assets/scripts/picturefill.js?v=1.0.0"></script>
+  <script type="text/javascript" src="../assets/scripts/svgxuse.js?v=1.0.0"></script>
+  <script type="text/javascript" src="../assets/scripts/polyfill.js?v=1.0.0"></script>
+  <script type="text/javascript" src="../assets/scripts/vendor.js?v=1.0.0"></script>
+
+        
+  <script type="text/javascript" src="../assets/scripts/utils.min.js?v=1.0.0"></script>
+  <script type="text/javascript" src="../assets/scripts/app.js?v=1.0.0"></script>
+
+    <script type="text/javascript" src="../sguide/js/prism.js?v=1.0.0"></script>
+  <script type="text/javascript" src="../assets/scripts/docs.js?v=1.0.0"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35522787-23"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-35522787-23');
+  </script>
+
+  <script src="//static.vidy.com/embed.min.js" data-appid="f0b2ccdb-bd70-4c63-b62e-17edc09dcbd1"></script>
+  <!-- <script src="//static.vidy.com/embed.min.js" data-appid="80434d52-64ad-451d-90ac-8b16ac6b1ed9"></script> -->
+  </html>
