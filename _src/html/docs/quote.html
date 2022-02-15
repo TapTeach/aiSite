@@ -1,0 +1,146 @@
+{#
+  Twig Templating!
+  Homepage: https://twig.symfony.com/
+  Docs: https://twig.symfony.com/doc/2.x/
+#}
+
+{% extends '_layouts/docs.html' %}
+{% set pageActiveTest = 'quote' %}
+
+{% block content %}
+  <header class="container-xl">
+    <div class="sg-comments">
+      <h1 class="type-h3">Quote</h1>
+      <ul>
+        <li>Quote component with a text or icon heading and optional background image.</li>
+        <li>Use quote component <code>{% verbatim %}{% include "_components/quote.html" %}{% endverbatim %}</code> to pass in slide information.</li>
+      </ul>
+    </div>
+    <table class="sg-table">
+      <thead>
+        <tr>
+          <th>Key</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>classes</code></td>
+          <td>Add classes to the section parent.</td>
+          <td>vg-3 bg-blue color-white bg-cover bg-center bg-no-repeat</td>
+        </tr>
+        <tr>
+          <td><code>bgImgFile</code></td>
+          <td>Add the url location to the background image.</td>
+          <td>Optional</td>
+        </tr>
+        <tr>
+          <td><code>container</code></td>
+          <td>Set the container class</td>
+          <td>container-xl</td>
+        </tr>
+        <tr>
+          <td><code>headingText</code></td>
+          <td>Text between the border lines.</td>
+          <td>Optional</td>
+        </tr>
+        <tr>
+          <td><code>headingIcon</code></td>
+          <td>Icon between the blue lines</td>
+          <td>Optional</td>
+        </tr>
+        <tr>
+          <td><code>text</code></td>
+          <td>Main large text.</td>
+          <td>Optional</td>
+        </tr>
+        <tr>
+          <td><code>textSub</code></td>
+          <td>Smaller text below the main large text.</td>
+          <td>Optional</td>
+        </tr>
+      </tbody>
+    </table>
+  </header>
+
+  <section class="container-xl">
+    <div class="sg-comments">
+      <h2 class="type-h4">No Heading</h2>
+    </div>
+
+    <div class="mb-3">
+      {% include "_components/quote.html" with {
+        "bgImgFile": "https://vmlyr-projects.s3.us-east-2.amazonaws.com/united-rentals/digital-toolbelt/bg-opportunity.png",
+        "text": "It’s a billion dollar problem and there wasn’t a tool powerful to fix it. So we designed and built one.",
+      } %}
+    </div>
+
+    <div class="sg-comments">
+      <h2 class="type-h4">Text Heading</h2>
+    </div>
+
+    <div class="mb-3">
+      {% include "_components/quote.html" with {
+        "classes": "",
+        "bgImgFile": "https://vmlyr-projects.s3.us-east-2.amazonaws.com/united-rentals/digital-toolbelt/bg-opportunity.png",
+        "container": "",
+        "headingText": "Opportunity",
+        "text": "It’s a billion dollar problem and there wasn’t a tool powerful to fix it. So we designed and built one.",
+      } %}
+    </div>
+
+    <div class="sg-comments">
+      <h2 class="type-h4">Icon Heading</h2>
+    </div>
+    {% include "_components/quote.html" with {
+      "classes": "",
+      "bgImgFile": "",
+      "container": "",
+      "headingText": "",
+      "text": "In our work with VMLY&R we have been able to ensure that we retain what makes United Rentals great in the physical world, in the new digital world.",
+      "textSub": "— Paul Maddison, Director of Digital Innovation, United Rentals",
+      "headingIcon": {
+        "name": "quote-left",
+        "color": "white",
+        "size": "xl"
+      }
+    } %}
+
+    {% markdown %}
+    ```twig.line-numbers
+    {% verbatim %}
+    {# Background image and no text or icon heading #}
+    {% include "_components/quote.html" with {
+      "bgImgFile": "https://vmlyr-projects.s3.us-east-2.amazonaws.com/united-rentals/digital-toolbelt/bg-opportunity.png",
+      "text": "It’s a billion dollar problem and there wasn’t a tool powerful to fix it. So we designed and built one.",
+    } %}
+
+    {# Background image and text heading #}
+    {% include "_components/quote.html" with {
+      "classes": "",
+      "bgImgFile": "https://vmlyr-projects.s3.us-east-2.amazonaws.com/united-rentals/digital-toolbelt/bg-opportunity.png",
+      "container": "",
+      "headingText": "Opportunity",
+      "text": "It’s a billion dollar problem and there wasn’t a tool powerful to fix it. So we designed and built one.",
+    } %}
+
+    {# Solid color background and icon heading with subtext #}
+    {% include "_components/quote.html" with {
+      "classes": "",
+      "bgImgFile": "",
+      "container": "",
+      "headingText": "",
+      "text": "In our work with VMLY&R we have been able to ensure that we retain what makes United Rentals great in the physical world, in the new digital world.",
+      "textSub": "— Paul Maddison, Director of Digital Innovation, United Rentals",
+      "headingIcon": {
+        "name": "quote-left",
+        "color": "white",
+        "size": "xl"
+      }
+    } %}
+    {% endverbatim %}
+    ```
+    {% endmarkdown %}
+  </section>
+{% endblock %}

@@ -1,0 +1,218 @@
+{#
+  Twig Templating!
+  Homepage: https://twig.symfony.com/
+  Docs: https://twig.symfony.com/doc/2.x/
+#}
+
+{% extends '_layouts/docs.html' %}
+{% set pageActiveTest = 'color' %}
+
+{% block content %}
+  <header class="container-xl">
+    <div class="sg-comments">
+      <h1 class="type-h3">Color</h1>
+      <ul>
+        <li>Utility classes for controlling the text &amp; background color of an element.</li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="container-xl">
+    <table class="sg-table mb-2">
+      <thead>
+        <th>Color</th>
+        <th>SCSS Function</th>
+        <th>Color Class</th>
+        <th>Background Class</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="bg-purple-dark color-white font-mono color-swatch"></td>
+          <td><code>setcolor(purple, dark)</code></td>
+          <td><code>.color-purple-dark</code></td>
+          <td><code>.bg-purple-dark</code></td>
+        </tr>
+        <tr>
+          <td class="bg-purple-medium color-white font-mono color-swatch"></td>
+          <td><code>setcolor(purple, medium)</code></td>
+          <td><code>.color-purple-medium</code></td>
+          <td><code>.bg-purple-medium</code></td>
+        </tr>
+        <tr>
+          <td class="bg-purple color-white font-mono color-swatch"></td>
+          <td><code>setcolor(purple)</code></td>
+          <td><code>.color-purple</code></td>
+          <td><code>.bg-purple</code></td>
+        </tr>
+        <tr>
+          <td class="bg-purple-light color-blue font-mono color-swatch"></td>
+          <td><code>setcolor(purple, light)</code></td>
+          <td><code>.color-purple-light</code></td>
+          <td><code>.bg-purple-light</code></td>
+        </tr>
+        <tr>
+          <td class="bg-blue color-white font-mono color-swatch"></td>
+          <td><code>setcolor(blue)</code></td>
+          <td><code>.color-blue</code></td>
+          <td><code>.bg-blue</code></td>
+        </tr>
+        <tr>
+          <td class="bg-blue-med color-blue font-mono color-swatch"></td>
+          <td><code>setcolor(blue, med)</code></td>
+          <td><code>.color-blue-med</code></td>
+          <td><code>.bg-blue-med</code></td>
+        </tr>
+          <td class="bg-blue-light color-blue font-mono color-swatch"></td>
+          <td><code>setcolor(blue, light)</code></td>
+          <td><code>.color-blue-light</code></td>
+          <td><code>.bg-blue-light</code></td>
+        </tr>
+        <tr>
+          <td class="bg-cyan-dark color-white font-mono color-swatch"></td>
+          <td><code>setcolor(cyan, dark)</code></td>
+          <td><code>.color-cyan-dark</code></td>
+          <td><code>.bg-cyan-dark</code></td>
+        </tr>
+        <tr>
+          <td class="bg-cyan color-white font-mono color-swatch"></td>
+          <td><code>setcolor(cyan)</code></td>
+          <td><code>.color-cyan</code></td>
+          <td><code>.bg-cyan</code></td>
+        </tr>
+        <tr>
+          <td class="bg-cyan-light color-blue font-mono color-swatch"></td>
+          <td><code>setcolor(cyan, light)</code></td>
+          <td><code>.color-cyan-light</code></td>
+          <td><code>.bg-cyan-light</code></td>
+        </tr>
+        <tr>
+          <td class="bg-red-dark color-white font-mono color-swatch"></td>
+          <td><code>setcolor(red, dark)</code></td>
+          <td><code>.color-red-dark</code></td>
+          <td><code>.bg-red-dark</code></td>
+        </tr>
+        <tr>
+          <td class="bg-red color-white font-mono color-swatch"></td>
+          <td><code>setcolor(red)</code></td>
+          <td><code>.color-red</code></td>
+          <td><code>.bg-red</code></td>
+        </tr>
+        <tr>
+          <td class="bg-red-light color-blue font-mono color-swatch"></td>
+          <td><code>setcolor(red, light)</code></td>
+          <td><code>.color-red-light</code></td>
+          <td><code>.bg-red-light</code></td>
+        </tr>
+        <tr>
+          <td class="bg-yellow-dark color-white font-mono color-swatch"></td>
+          <td><code>setcolor(yellow, dark)</code></td>
+          <td><code>.color-yellow-dark</code></td>
+          <td><code>.bg-yellow-dark</code></td>
+        </tr>
+        <tr>
+          <td class="bg-yellow color-blue font-mono color-swatch"></td>
+          <td><code>setcolor(yellow)</code></td>
+          <td><code>.color-yellow</code></td>
+          <td><code>.bg-yellow</code></td>
+        </tr>
+        <tr>
+          <td class="bg-yellow-light color-blue font-mono color-swatch"></td>
+          <td><code>setcolor(yellow, light)</code></td>
+          <td><code>.color-yellow-light</code></td>
+          <td><code>.bg-yellow-light</code></td>
+        </tr>
+        <tr>
+          <td class="bg-green-dark color-white font-mono color-swatch"></td>
+          <td><code>setcolor(green, dark)</code></td>
+          <td><code>.color-green-dark</code></td>
+          <td><code>.bg-green-dark</code></td>
+        </tr>
+        <tr>
+          <td class="bg-green color-white font-mono color-swatch"></td>
+          <td><code>setcolor(green)</code></td>
+          <td><code>.color-green</code></td>
+          <td><code>.bg-green</code></td>
+        </tr>
+        <tr>
+          <td class="bg-green-light color-blue font-mono color-swatch"></td>
+          <td><code>setcolor(green, light)</code></td>
+          <td><code>.color-green-light</code></td>
+          <td><code>.bg-green-light</code></td>
+        </tr>
+        <tr>
+          <td class="bg-orange-dark color-white font-mono color-swatch"></td>
+          <td><code>setcolor(orange, dark)</code></td>
+          <td><code>.color-orange-dark</code></td>
+          <td><code>.bg-orange-dark</code></td>
+        </tr>
+        <tr>
+          <td class="bg-orange color-blue font-mono color-swatch"></td>
+          <td><code>setcolor(orange)</code></td>
+          <td><code>.color-orange</code></td>
+          <td><code>.bg-orange</code></td>
+        </tr>
+        <tr>
+          <td class="bg-orange-light color-blue font-mono color-swatch"></td>
+          <td><code>setcolor(orange, light)</code></td>
+          <td><code>.color-orange-light</code></td>
+          <td><code>.bg-orange-light</code></td>
+        </tr>
+        <tr>
+          <td class="bg-gold font-mono color-swatch"></td>
+          <td><code>setcolor(gold)</code></td>
+          <td><code>.color-gold</code></td>
+          <td><code>.bg-gold</code></td>
+        </tr>
+        <tr>
+          <td class="bg-black color-white font-mono color-swatch"></td>
+          <td><code>setcolor(black)</code></td>
+          <td><code>.color-black</code></td>
+          <td><code>.bg-black</code></td>
+        </tr>
+        <tr>
+          <td class="bg-gray-dark color-white font-mono color-swatch"></td>
+          <td><code>setcolor(gray, dark)</code></td>
+          <td><code>.color-gray-dark</code></td>
+          <td><code>.bg-gray-dark</code></td>
+        </tr>
+        <tr>
+          <td class="bg-gray-med color-blue font-mono color-swatch"></td>
+          <td><code>setcolor(gray, med)</code></td>
+          <td><code>.color-gray-med</code></td>
+          <td><code>.bg-gray-med</code></td>
+        </tr>
+        <tr>
+          <td class="bg-gray-medLight color-blue font-mono color-swatch"></td>
+          <td><code>setcolor(gray, medLight)</code></td>
+          <td><code>.color-gray-medLight</code></td>
+          <td><code>.bg-gray-medLight</code></td>
+        </tr>
+        <tr>
+          <td class="bg-gray color-blue font-mono color-swatch"></td>
+          <td><code>setcolor(gray)</code></td>
+          <td><code>.color-gray</code></td>
+          <td><code>.bg-gray</code></td>
+        </tr>
+        <tr>
+          <td class="bg-white font-mono color-swatch"></td>
+          <td><code>setcolor(white)</code></td>
+          <td><code>.color-white</code></td>
+          <td><code>.bg-white</code></td>
+        </tr>
+      </tbody>
+    </table>
+
+    {% markdown %}
+    ```twig.line-numbers
+    {% verbatim %}
+    {# For Text Color #}
+    <p class="color-white"></p>
+
+    {# For Background Color #}
+    <div class="bg-white"></div>
+    {% endverbatim %}
+    ```
+    {% endmarkdown %}
+  </section>
+
+{% endblock %}

@@ -1,0 +1,51 @@
+// ================================
+// Footer
+// ================================
+
+.layout-footer {
+  background-color: var(--footerBg);
+  color: var(--footerCopyColor);
+
+  img {
+    max-height: rem(270px);
+    width: auto;
+  }
+}
+
+.bg-recognition {
+  background-color: var(--footerBgRecognition);
+}
+
+.footer__recognitionHeading {
+  color: var(--footerRecognitionHeadingColor);
+}
+
+.footer__recognitionTitle {
+  color: var(--footerRecognitionTitleColor);
+}
+
+.footer__recognitionText {
+  color: var(--footerRecognitionTextColor);
+}
+
+.social {
+  a {
+    svg {
+      fill: var(--socialFill);
+    }
+
+    &:hover {
+      svg {
+        fill: var(--socialHover);
+      }
+    }
+  }
+}
+
+.link {
+  color: var(--socialFill);
+
+  &:hover {
+    color: var(--socialHover);
+  }
+}

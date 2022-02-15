@@ -1,0 +1,250 @@
+// ================================
+// Base: Default
+// ================================
+
+@at-root {
+  @viewport {
+    width: device-width;
+  }
+}
+
+// CSS variables add color vars to files starting with layoutheaderbg
+:root {
+  --fontDefault: 'Avenir', -apple-system, blinkmacsystemfont, 'Segoe UI', helvetica, arial, sans-serif;
+  --fontPrimary: 'yrthree', sans-serif;
+  --fontMono: 'Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace;
+  --fontWeight300: 300;
+  --fontWeight350: 350;
+  --fontWeight400: 400;
+  --fontWeight500: 500;
+  --fontWeight700: 700;
+  --fontWeight900: 900;
+  --outlineColor: #5db7a5;
+  --bodyFontColor: #04102b;
+  --bodyLinkColor: #00d0ff;
+  --bodyLinkHoverColor: #04102b;
+  --bodyLinkColorLight: #00d0ff;
+  --bodyLinkColorWhite: #fff;
+  --bodyLinkHoverColorLight: #fff;
+  --hotspotGradientColor1: #04102b;
+  --hotspotGradientColor2: #00d0ff;
+  --carouselBtnColor: #00d0ff;
+  --carouselBtnActiveColor: #003845;
+  --carouselBtnDisabledColor: #404040;
+  --carouselBtnIconColor: #fff;
+  --carouselCounterBg: #eeecec;
+  --teamNameColor: #00d0ff;
+  --teamTitleColor: currentColor;
+  --teamCircleImgBorderColor: #fff;
+  --teamBgColor: transparent;
+  --teamBgColorNohover: transparent;
+  --contactNameColor: #00d0ff;
+  --contactTitleColor: #04102b;
+  --contactLinkColor: #00d0ff;
+  --contactLinkHoverColor: #04102b;
+  --modalCloseBtnBgColor: #00d0ff;
+  --layoutHeaderBg: #04102b;
+  --hamburgerMenu: #fff;
+  --menuClose: #fff;
+  --headerNavBg: #04102b;
+  --headerNavBg2: 0, 208, 255;
+  --menuTitleColor: #fff;
+  --menuTextColor: #00d0ff;
+  --menuTextColorHover: #fff;
+  --menuInlineTextColor: #fff;
+  --menuInlineTextColorHvr: #00d0ff;
+  --buttonLtBg: transparent;
+  --buttonLtOutline: #fff;
+  --buttonLtFont: #fff;
+  --buttonLtHvrBg: #fff;
+  --buttonLtHvrFont: #04102b;
+  --buttonDrkBg: transparent;
+  --buttonDrkOutline: #04102b;
+  --buttonDrkFont: #04102b;
+  --buttonDrkHvrBg: #04102b;
+  --buttonDrkHvrFont: #fff;
+  --buttonlessHvr: #04102b;
+  --buttonlessHvrLight: #fff;
+  --quoteBorder: #00d0ff;
+  --quoteHeadingText: #fff;
+  --quoteHeadingIcon: #fff;
+  --scrollIcon: #fff;
+  --scrollIconHover: #00d0ff;
+  --scrollIconDrk: #04102b;
+  --scrollIconHoverDrk: #00d0ff;
+  --iconBlack: #000;
+  --iconWhite: #fff;
+  --iconGray: #404040;
+  --iconBlue: #04102b;
+  --iconCyan: #00d0ff;
+  --iconGold: #e5c58a;
+  --iconCustom1: #fff25b;
+  --iconCustom2: #263773;
+  --iconCustom3: #0745e2;
+  --siloTitleColor: #fff;
+  --siloTextColor: #fff;
+  --siloHr: #00d0ff;
+  --siloLinkColor: #00d0ff;
+  --siloHover: 0, 174, 239;
+  --socialFill: #fff;
+  --socialHover: #04102b;
+  --speedBumpBg: #04102b;
+  --speedBumpBorderLft: 255, 255, 255;
+  --speedBumpBorderRght: 255, 255, 255;
+  --speedBumpLtBg: #3fc2f3, #0db2f0;
+  --speedBumpDkBg: #005392, #013270;
+  --footerBgRecognition: #04102b;
+  --footerRecognitionHeadingColor: #fff;
+  --footerRecognitionTitleColor: #00d0ff;
+  --footerRecognitionTextColor: #fff;
+  --footerBg: #00d0ff;
+  --footerCopyColor: #fff;
+}
+
+// A subtle focus style for keyboard-input elements
+.text-input:focus {
+  outline: 1px solid var(--outlineColor);
+}
+
+// No outline for non-keyboard-inputs elements
+button:focus,
+select:focus {
+  outline: none;
+}
+
+// When user is tabbing, add focus outline
+html.user-is-tabbing *:focus {
+  outline: 2px solid var(--outlineColor) !important;
+  outline: 5px auto -webkit-focus-ring-color !important;
+}
+
+// --------------------------------
+// Pseudo
+// --------------------------------
+
+::selection {
+  background: #777;
+  color: #fff;
+  text-shadow: none;
+}
+
+// --------------------------------
+// Body
+// --------------------------------
+
+html {
+  font-size: 62.5%;
+  font-size: 2.5vw;
+
+  @include media('>=420px') {
+    font-size: 2vw;
+  }
+  @include media('>=sm') {
+    font-size: 1.7vw;
+  }
+  @include media('>=md') {
+    font-size: 1.1vw;
+  }
+  @include media('>=lg') {
+    font-size: 0.9vw;
+  }
+  @include media('>=xl') {
+    font-size: 0.8vw;
+  }
+}
+
+body {
+  background-color: setcolor(white);
+  @include setfont(default);
+  font-size: rem(15px);
+  line-height: 1.6;
+  color: var(--bodyFontColor);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1 {
+  @include get-typeset('h1');
+}
+
+h2 {
+  @include get-typeset('h2');
+}
+
+h3 {
+  @include get-typeset('h3');
+}
+
+h4 {
+  @include get-typeset('h4');
+}
+
+h5 {
+  @include get-typeset('h5');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include setfont(primary, $font-900);
+}
+
+a {
+  color: var(--bodyLinkColor);
+
+  &:hover {
+    color: var(--bodyLinkHoverColor);
+  }
+}
+
+.link--light {
+  color: var(--bodyLinkColorLight);
+
+  &:hover {
+    color: var(--bodyLinkHoverColorLight);
+  }
+}
+
+.link--white {
+  color: var(--bodyLinkColorWhite);
+
+  &:hover {
+    color: var(--bodyLinkHoverColor);
+  }
+}
+
+.hr {
+  height: 1px;
+  border-top: 1px solid #8c8b8b;
+}
+
+.hr__dashed {
+  border-style: dashed;
+}
+
+.hr__2 {
+  height: 2px;
+  border-width: 2px;
+}
+
+.hr__cyan {
+  border-color: setcolor(cyan);
+}
+
+.hr__black {
+  border-color: setcolor(black);
+}
+
+.hr__blue {
+  border-color: setcolor(blue);
+}
+
+.hr__white {
+  border-color: setcolor(white);
+}

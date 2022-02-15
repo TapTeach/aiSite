@@ -1,0 +1,57 @@
+// ================================
+// Colors
+// ================================
+
+$colors: (
+  white: (
+    base: #fff
+  ),
+  black: (
+    base: #000
+  ),
+  gray: (
+    base: #e6e6e6,
+    dark: #404040,
+    med: #808080,
+    medLight: #bfbfbf
+  ),
+  gold: (
+    base: #e5c58a
+  ),
+  yellow: (
+    base: #fb9d29,
+    dark: #693900,
+    light: #fff4e9
+  ),
+  red: (
+    base: #dd2469,
+    dark: #3d0619,
+    light: #fbe8ef
+  ),
+  purple: (
+    base: #b452cb,
+    dark: #2c0f33,
+    medium: #682478,
+    light: #f7edf9
+  ),
+  cyan: (
+    base: #00d0ff,
+    dark: #003845,
+    light: #e4f9ff
+  ),
+  blue: (
+    base: #04102b,
+    med: #085eff,
+    light: #e5eeff
+  ),
+  green: (
+    base: #24d0be,
+    dark: #06403b,
+    light: #eaf5f5
+  ),
+  orange: (
+    base: #fb664d,
+    dark: #591b12,
+    light: #ffefec
+  )
+);

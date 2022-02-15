@@ -1,0 +1,159 @@
+{#
+  Twig Templating!
+  Homepage: https://twig.symfony.com/
+  Docs: https://twig.symfony.com/doc/2.x/
+#}
+
+{% extends '_layouts/docs.html' %}
+{% set pageActiveTest = 'contact' %}
+
+{% block content %}
+  <header class="container-xl">
+    <div class="sg-comments">
+      <h1 class="type-h3">Contact</h1>
+
+      <ul>
+        <li>Create a contact with a picture, name, title, phone number and email address.</li>
+        <li>Use the Twig <code>{% verbatim %}{% include{% endverbatim %}</code> to show the contact component, <code>components/contact.html</code>.</li>
+        <li>Fill in the parameters.</li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="container-xl">
+    <div class="sg-comments">
+      <h2 class="type-h4">
+        Parameters
+      </h2>
+      <table class="sg-table">
+        <thead>
+          <tr>
+            <th>Key</th>
+            <th>Value</th>
+            <th>Default</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>name</code></td>
+            <td>The individual's name.</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td><code>title</code></td>
+            <td>The individual's company title.</td>
+            <td>optional</td>
+          </tr>
+          <tr>
+            <td><code>phone number</code></td>
+            <td>The individual's phone number.</td>
+            <td>optional</td>
+          </tr>
+          <tr>
+            <td><code>email address</code></td>
+            <td>The individual's email address.</td>
+            <td>optional</td>
+          </tr>
+          <tr>
+            <td><code>img</code></td>
+            <td>See <a href="figure.html">picture component for parameters</a></td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td><code>imgTop</code></td>
+            <td>A boolean to set the image above the users details.</td>
+            <td>false, optional</td>
+          </tr>
+          <tr>
+            <td><code>imgCir</code></td>
+            <td>A boolean to change a square image to a circle.</td>
+            <td>false, optional</td>
+          </tr>
+          <tr>
+            <td><code>textCenter</code></td>
+            <td>A boolean to center align the text.</td>
+            <td>false, optional</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="container-xl">
+    <div class="sg-example">
+      <div class="row">
+        <div class="col-12 md:col-5 mb-2 md:mb-0">
+          {% include "_components/contact.html" with {
+            "img": "https://images.unsplash.com/photo-1508330640077-ede7a6e8fd2f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=330&q=80",
+            "imgTop": false,
+            "name": "Jane Doe",
+            "title": "Director, Communications",
+            "phone": "913.913.9139",
+            "email": "jane.doe@company.com"
+          } %}
+        </div>
+        <div class="col-12 sm:col-6 md:col-3">
+          {% include "_components/contact.html" with {
+            "img": "https://images.unsplash.com/photo-1508330640077-ede7a6e8fd2f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=330&q=80",
+            "imgTop": true,
+            "name": "Jane Doe",
+            "title": "Director, Communications",
+            "phone": "913.913.9139",
+            "email": "jane.doe@company.com"
+          } %}
+        </div>
+        <div class="col-12 sm:col-6 md:col-3">
+          {% include "_components/contact.html" with {
+            "img": "https://images.unsplash.com/photo-1508330640077-ede7a6e8fd2f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&h=300&q=80",
+            "imgTop": true,
+            "imgCir": true,
+            "textCenter": true,
+            "name": "Jane Doe",
+            "title": "Director, Communications",
+            "phone": "913.913.9139",
+            "email": "jane.doe@company.com"
+          } %}
+        </div>
+      </div>
+    </div>
+
+    {% markdown %}
+    ```twig.line-numbers
+    {% verbatim %}
+    {# Image to the left #}
+    {% include "_components/contact.html" with {
+      "img": "https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/project/hillary-carter.jpg",
+      "imgTop": false,
+      "name": "Jane Doe",
+      "title": "Director, Communications",
+      "phone": "913.913.9139",
+      "email": "jane.doe@company.com"
+    } %}
+
+    {# Image on top #}
+    {% include "_components/contact.html" with {
+      "img": "https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/project/hillary-carter.jpg",
+      "imgTop": true,
+      "name": "Jane Doe",
+      "title": "Director, Communications",
+      "phone": "913.913.9139",
+      "email": "jane.doe@company.com"
+    } %}
+
+    {# Circle image on top #}
+    {% include "_components/contact.html" with {
+      "img": "https://images.unsplash.com/photo-1508330640077-ede7a6e8fd2f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&h=300&q=80",
+      "imgTop": true,
+      "imgCir": true,
+      "textCenter": true,
+      "name": "Jane Doe",
+      "title": "Director, Communications",
+      "phone": "913.913.9139",
+      "email": "jane.doe@company.com"
+    } %}
+    {% endverbatim %}
+    ```
+    {% endmarkdown %}
+  </section>
+
+{% endblock %}

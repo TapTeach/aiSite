@@ -1,0 +1,13 @@
+// ================================
+// Components: Content Stripes
+// ================================
+
+.contentStripes {
+  .contentStripes__logo {
+    max-width: rem(200px);
+
+    @include media('>=md') {
+      max-width: rem(200px);
+    }
+  }
+}

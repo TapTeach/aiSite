@@ -1,0 +1,819 @@
+{#
+  Twig Templating!
+  Homepage: https://twig.symfony.com/
+  Docs: https://twig.symfony.com/doc/2.x/
+#}
+
+{% extends '_layouts/docs.html' %}
+{% set pageActiveTest = 'about' %}
+{% set enableLibraryPlyr = true %}
+
+{% block content %}
+  <header class="container-xl">
+    <div class="sg-comments">
+      <h1 class="type-h3">About VMLY&R</h1>
+      <ul>
+        <li>This page includes sections for an about page that is requested by the New Business Team.</li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="container-xl">
+    <div class="vg-2">
+      <div class="container-lg">
+        <h1 class="type-h3 align-center mb-2">We Create Connected Brands</h1>
+
+        <p class="type-lg align-center mb-2">We harness <span class="font-bold">creativity</span>, <span class="font-bold">technology</span>, and <span class="font-bold">culture</span> to create connected brands<br class="xs:hide sm:hide"> that drive value for our clients and impact the world.</p>
+
+        {% include "_components/video.html" with {
+          "options": {
+          "autoplay": false,
+            "controls": ["play", "play-large", "progress", "current-time", "volume", "fullscreen"]
+          },
+          "embed": {
+            "id": "468186872",
+            "provider": "vimeo"
+          }
+        } %}
+      </div>
+    </div>
+
+    {% markdown %}
+    ```twig.line-numbers
+    {% verbatim %}
+    <section class="vg-2">
+      <div class="container-lg">
+        <h1 class="type-h3 align-center mb-2">We Create Connected Brands</h1>
+
+        <p class="type-lg align-center mb-2">We harness <span class="font-bold">creativity</span>, <span class="font-bold">technology</span>, and <span class="font-bold">culture</span> to create connected brands<br class="xs:hide sm:hide"> that drive value for our clients and impact the world.</p>
+
+        {% include "_components/video.html" with {
+          "options": {
+          "autoplay": false,
+            "controls": ["play", "play-large", "progress", "current-time", "volume", "fullscreen"]
+          },
+          "embed": {
+            "id": "468186872",
+            "provider": "vimeo"
+          }
+        } %}
+      </div>
+    </section>
+    {% endverbatim %}
+    ```
+    {% endmarkdown %}
+  </section>
+
+  <section class="container-xl">
+    <div class="vg-2 bg-blue color-white">
+      <div class="container-xl">
+        <p class="type-lg align-center mb-3">We create connected brands<br class="xs:hide sm:hide"> <span class="font-bold">through our brand experience and customer experience practices</span>.</p>
+
+        <div class="row justify-center mb-4">
+          <div class="col-10 md:col-6">
+            {% include "_components/figure.html" with {
+              "picture": {
+                "altText": "BX + CX",
+                "srcPath": "https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/project/bx-cx.png",
+                "placeholderSize": "1082 683",
+                "class": "className"
+              }
+            } %}
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 md:col-4 mb-2 md:mb-0">
+            <h2 class="type-h3 leading-none mb-2">
+              Global Power
+              <span class="block color-cyan">Local Strength</span>
+            </h2>
+            <p class="type-xl font-bold color-cyan">12,000+ People | 100+ Offices</p>
+            <p class="type-xl font-bold color-cyan mb-2">44+ Countries</p>
+            <p>We have a 30,000-foot perspective, with boots on the ground. We believe that since consumers connect and commit to brands on a local level, you can’t have a strong global network without local agencies that provide street-level insights and cultural nuance. Clients get the credibility and agility of a boutique with the support, infrastructure and tools of a global network.</p>
+          </div>
+          <div class="col-12 md:col-8">
+            {% include "_components/figure.html" with {
+              "picture": {
+                "altText": "World map with blue locator dots all over",
+                "srcPath": "https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/project/world-map.png",
+                "placeholderSize": "1154 575",
+                "class": ""
+              }
+            } %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% markdown %}
+    ```twig.line-numbers
+    {% verbatim %}
+    <section class="vg-2 bg-blue color-white">
+      <div class="container-xl">
+        <p class="type-lg align-center mb-3">We create connected brands<br class="xs:hide sm:hide"> <span class="font-bold">through our brand experience and customer experience practices</span>.</p>
+
+        <div class="row justify-center mb-4">
+          <div class="col-10 md:col-6">
+            {% include "_components/figure.html" with {
+              "picture": {
+                "altText": "BX + CX",
+                "srcPath": "https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/project/bx-cx.png",
+                "placeholderSize": "1082 683",
+                "class": "className"
+              }
+            } %}
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 md:col-4 mb-2 md:mb-0">
+            <h2 class="type-h3 leading-none mb-2">
+              Global Power
+              <span class="block color-cyan">Local Strength</span>
+            </h2>
+            <p class="type-xl font-bold color-cyan">12,000+ People | 100+ Offices</p>
+            <p class="type-xl font-bold color-cyan mb-2">44+ Countries</p>
+            <p>We have a 30,000-foot perspective, with boots on the ground. We believe that since consumers connect and commit to brands on a local level, you can’t have a strong global network without local agencies that provide street-level insights and cultural nuance. Clients get the credibility and agility of a boutique with the support, infrastructure and tools of a global network.</p>
+          </div>
+          <div class="col-12 md:col-8">
+            {% include "_components/figure.html" with {
+              "picture": {
+                "altText": "World map with blue locator dots all over",
+                "srcPath": "https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/project/world-map.png",
+                "placeholderSize": "1154 575",
+                "class": ""
+              }
+            } %}
+          </div>
+        </div>
+      </div>
+    </section>
+    {% endverbatim %}
+    ```
+    {% endmarkdown %}
+  </section>
+
+  <section class="container-xl">
+    <style>
+      .faq__row {
+        border-top: 0 solid #ddd !important;
+      }
+
+      .faq__row dt {        
+        border-left: 0 solid #ddd !important;
+        border-right: 0 solid #ddd !important;
+        border-bottom: 0 solid #ddd !important;
+      }
+    </style>
+    <div class="vg-2">
+      <div class="container-lg">
+        <h2 class="type-h3 color-blue align-center mb-2">Our Capabilities</h2>
+
+        <div class="row">
+          <div class="col-12 md:col-4 mb-3 md:mb-0">
+            <h4 class="type-h6 align-center">Strategy & Intelligence</h4>
+            <p class="color-cyan align-center mb-2">Uncovering Deep-Rooted Truths</p>
+            <dl class="faq__list">
+              <div class="faq__row">
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Advisory Services</span> 
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>We bring structure to the unstructured business problems of the connected age. We help CMOs as they transform customer engagement, enterprise IT, channel design, and their global go-to-market efforts in response to the sweeping effects of digital disruption.</p>
+                  {% endblock %}
+                {% endembed %}
+            
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Brand Analytics</span>
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>Measurement and ongoing optimization are key to maximize your ROI. We ensure key KPIs are set-up from the start to track all aspects of communications, from messaging to channel planning.</p>
+                  {% endblock %}
+                {% endembed %}
+            
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Brand Planning</span>
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>We’re thinking about both the short-term and the long haul. We’ll pinpoint where your brand sits in the cultural landscape, where you want it to go, and how we can close the gap between the two.</p>
+                  {% endblock %}
+                {% endembed %}
+            
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Consumer Research</span>
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>We find out what makes consumers tick, buy, like, share, and feel. But we gather deeper insights into their lives and what matters to them. When we know how they think, we’ll know how we should.</p>
+                  {% endblock %}
+                {% endembed %}
+            
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Channel Insights</span>
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>It’s a hectic environment to navigate. We keep on top of data and what social shifts are taking place. From there, we can decide where you need to be and what message to take with you.</p>
+                  {% endblock %}
+                {% endembed %}
+            
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Analytics & Data</span>
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>We’ll dive head-first into data, identify trends and come out with a translation. With a clear plan and a tested message, you’ll have the confidence that you’re getting the most out of every cent spent.</p>
+                  {% endblock %}
+                {% endembed %}
+              </div>
+            </dl>
+          </div>
+          <div class="col-12 md:col-4 mb-3 md:mb-0">
+            <h4 class="type-h6 align-center">Content & Campaigns</h4>
+            <p class="color-cyan align-center mb-2">Spotlighting Human Stories</p>
+
+            <dl class="faq__list">
+              <div class="faq__row">
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Integrated Campaigns</span> 
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>This is where our research pays off. We take what we’ve learned, and with your goal in mind, craft a story that engages consumers in a meaningful way across channels and even over years.</p>
+                  {% endblock %}
+                {% endembed %}
+            
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Community Management</span>
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>When it comes to social media, brand communication must function as a conversation — and conversations are personal. We dig in and learn as much as we can, and then we genuinely converse.</p>
+                  {% endblock %}
+                {% endembed %}
+            
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Media Services</span>
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>Owned, paid, or earned, we help you get the most out of your media by ensuring that your brand’s narrative is enriched at each touchpoint. The more we extend your reach, the stronger your influence.</p>
+                  {% endblock %}
+                {% endembed %}
+            
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Social Strategy</span>
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>Social media is constantly on the move, and we’re here to help make sure your brand keeps up. We identify how, when and where to tell your story on social to get the most impact. Utilizing our knowledge about the ins and outs of each social platform, we create strategies that are completely tailored to your brand’s needs.</p>
+                  {% endblock %}
+                {% endembed %}
+            
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Public Relations</span>
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>We work hard to get your name in front of the right consumers, but the exposure doesn’t end there. We find natural places for your message to be heard, and then amplify it, giving your brand’s voice authenticity and impact.</p>
+                  {% endblock %}
+                {% endembed %}
+            
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Loyalty</span>
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>We create ongoing relationships with customers, making each interaction seamless and rewarding them for their loyalty to your brand.</p>
+                  {% endblock %}
+                {% endembed %}
+              </div>
+            </dl>
+          </div>
+          <div class="col-12 md:col-4">
+            <h4 class="type-h6 align-center">Platforms & Experiences</h4>
+            <p class="color-cyan align-center mb-2">Shaping Fluid Environments</p>
+
+
+            <dl class="faq__list">
+              <div class="faq__row">
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Content Platforms</span> 
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>We can generate work to suit any space, but we know it’s not one size fits all. We make sure that everything we do fits in seamlessly with how your business operates.</p>
+                  {% endblock %}
+                {% endembed %}
+            
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Technology Development</span>
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>We always take a creative, broad-minded approach to technology, leaving plenty of room for innovation. We look at your entire enterprise to identify opportunities for technology to seamlessly connect with people.</p>
+                  {% endblock %}
+                {% endembed %}
+            
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Commerce</span>
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>Wherever there’s a digital exchange between you and your consumers, we aim to make the digital disappear. With equal parts usability, personality, and reliability, the path to purchase feels seamless.</p>
+                  {% endblock %}
+                {% endembed %}
+            
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Mobility</span>
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>Wherever your consumers are, we make sure your brand is there too. Seamless, intuitive, invisible — and ready at a finger’s swipe of a screen.</p>
+                  {% endblock %}
+                {% endembed %}
+            
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Product Innovation</span>
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>We actively look for opportunities to put you at the top of your industry by transforming what products and services you offer and how you offer them. Whether designing a new product or developing innovations that make your brand run more efficiently, this proactive approach ensures that you will always be ahead of the curve.</p>
+                  {% endblock %}
+                {% endembed %}
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% markdown %}
+    ```twig.line-numbers
+    {% verbatim %}
+    <style>
+      .faq__row {
+        border-top: 0 solid #ddd !important;
+      }
+
+      .faq__row dt {        
+        border-left: 0 solid #ddd !important;
+        border-right: 0 solid #ddd !important;
+        border-bottom: 0 solid #ddd !important;
+      }
+    </style>
+    <section class="vg-2">
+      <div class="container-lg">
+        <h2 class="type-h3 color-blue align-center mb-2">Our Capabilities</h2>
+
+        <div class="row">
+          <div class="col-12 md:col-4 mb-3 md:mb-0">
+            <h4 class="type-h6 align-center">Strategy & Intelligence</h4>
+            <p class="color-cyan align-center mb-2">Uncovering Deep-Rooted Truths</p>
+            <dl class="faq__list">
+              <div class="faq__row">
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Advisory Services</span> 
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>We bring structure to the unstructured business problems of the connected age. We help CMOs as they transform customer engagement, enterprise IT, channel design, and their global go-to-market efforts in response to the sweeping effects of digital disruption.</p>
+                  {% endblock %}
+                {% endembed %}
+            
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Brand Analytics</span>
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>Measurement and ongoing optimization are key to maximize your ROI. We ensure key KPIs are set-up from the start to track all aspects of communications, from messaging to channel planning.</p>
+                  {% endblock %}
+                {% endembed %}
+            
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Brand Planning</span>
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>We’re thinking about both the short-term and the long haul. We’ll pinpoint where your brand sits in the cultural landscape, where you want it to go, and how we can close the gap between the two.</p>
+                  {% endblock %}
+                {% endembed %}
+            
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Consumer Research</span>
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>We find out what makes consumers tick, buy, like, share, and feel. But we gather deeper insights into their lives and what matters to them. When we know how they think, we’ll know how we should.</p>
+                  {% endblock %}
+                {% endembed %}
+            
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Channel Insights</span>
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>It’s a hectic environment to navigate. We keep on top of data and what social shifts are taking place. From there, we can decide where you need to be and what message to take with you.</p>
+                  {% endblock %}
+                {% endembed %}
+            
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Analytics & Data</span>
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>We’ll dive head-first into data, identify trends and come out with a translation. With a clear plan and a tested message, you’ll have the confidence that you’re getting the most out of every cent spent.</p>
+                  {% endblock %}
+                {% endembed %}
+              </div>
+            </dl>
+          </div>
+          <div class="col-12 md:col-4 mb-3 md:mb-0">
+            <h4 class="type-h6 align-center">Content & Campaigns</h4>
+            <p class="color-cyan align-center mb-2">Spotlighting Human Stories</p>
+
+            <dl class="faq__list">
+              <div class="faq__row">
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Integrated Campaigns</span> 
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>This is where our research pays off. We take what we’ve learned, and with your goal in mind, craft a story that engages consumers in a meaningful way across channels and even over years.</p>
+                  {% endblock %}
+                {% endembed %}
+            
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Community Management</span>
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>When it comes to social media, brand communication must function as a conversation — and conversations are personal. We dig in and learn as much as we can, and then we genuinely converse.</p>
+                  {% endblock %}
+                {% endembed %}
+            
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Media Services</span>
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>Owned, paid, or earned, we help you get the most out of your media by ensuring that your brand’s narrative is enriched at each touchpoint. The more we extend your reach, the stronger your influence.</p>
+                  {% endblock %}
+                {% endembed %}
+            
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Social Strategy</span>
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>Social media is constantly on the move, and we’re here to help make sure your brand keeps up. We identify how, when and where to tell your story on social to get the most impact. Utilizing our knowledge about the ins and outs of each social platform, we create strategies that are completely tailored to your brand’s needs.</p>
+                  {% endblock %}
+                {% endembed %}
+            
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Public Relations</span>
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>We work hard to get your name in front of the right consumers, but the exposure doesn’t end there. We find natural places for your message to be heard, and then amplify it, giving your brand’s voice authenticity and impact.</p>
+                  {% endblock %}
+                {% endembed %}
+            
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Loyalty</span>
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>We create ongoing relationships with customers, making each interaction seamless and rewarding them for their loyalty to your brand.</p>
+                  {% endblock %}
+                {% endembed %}
+              </div>
+            </dl>
+          </div>
+          <div class="col-12 md:col-4">
+            <h4 class="type-h6 align-center">Platforms & Experiences</h4>
+            <p class="color-cyan align-center mb-2">Shaping Fluid Environments</p>
+
+
+            <dl class="faq__list">
+              <div class="faq__row">
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Content Platforms</span> 
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>We can generate work to suit any space, but we know it’s not one size fits all. We make sure that everything we do fits in seamlessly with how your business operates.</p>
+                  {% endblock %}
+                {% endembed %}
+            
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Technology Development</span>
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>We always take a creative, broad-minded approach to technology, leaving plenty of room for innovation. We look at your entire enterprise to identify opportunities for technology to seamlessly connect with people.</p>
+                  {% endblock %}
+                {% endembed %}
+            
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Commerce</span>
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>Wherever there’s a digital exchange between you and your consumers, we aim to make the digital disappear. With equal parts usability, personality, and reliability, the path to purchase feels seamless.</p>
+                  {% endblock %}
+                {% endembed %}
+            
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Mobility</span>
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>Wherever your consumers are, we make sure your brand is there too. Seamless, intuitive, invisible — and ready at a finger’s swipe of a screen.</p>
+                  {% endblock %}
+                {% endembed %}
+            
+                {% embed "_components/accordion.html" with { "contentColor": 'color-blue bg-gray' } %}
+                  {% block label %}
+                    <div class="col-12">
+                      <span>Product Innovation</span>
+                    </div>
+                  {% endblock %}
+            
+                  {% block content %}
+                    <p>We actively look for opportunities to put you at the top of your industry by transforming what products and services you offer and how you offer them. Whether designing a new product or developing innovations that make your brand run more efficiently, this proactive approach ensures that you will always be ahead of the curve.</p>
+                  {% endblock %}
+                {% endembed %}
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+    {% endverbatim %}
+    ```
+    {% endmarkdown %}
+  </section>
+
+  <section class="container-xl">
+    <div class="vg-2 bg-gray">
+      <div class="container-lg">
+        <h2 class="type-h3 color-blue align-center mb-2">Our Commitment to Diversity, Equity & Inclusion</h2>
+
+        <p class="mb-2">Our agency values the strength of a diverse workforce and an informed approach to our culture, clients and people. To ensure this, we maintain an active task force within VMLY&R, called, Diversity, Equity, and Inclusion (DEI), whose mission is to guide, celebrate, and promote cultural literacy across our vast global network. Click through the below to get a flavor of our culture, our values and current initiatives.</p>
+
+        <div>
+          {% embed "_components/carousel.html" with {
+            "tnsOptions": {
+              autoHeight: true,
+              rewind: true,
+              controls: false,
+              responsive: {
+                568: {controls: true}
+              }
+            },
+            "counter": {
+              "hide": false,
+              "backdrop": false,
+              "inverted": false
+            },
+            "controls": {
+              "fixed": false
+            }
+          } %}
+            {% block carousel %}
+              <div class="carousel__slide">
+                <img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/project/about-slide-1.jpg" alt="">
+              </div>
+              <div class="carousel__slide">
+                <img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/project/about-slide-2.jpg" alt="">
+              </div>
+              <div class="carousel__slide">
+                <img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/project/about-slide-3.jpg" alt="">
+              </div>
+              <div class="carousel__slide">
+                <img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/project/about-slide-4.jpg" alt="">
+              </div>
+              <div class="carousel__slide">
+                <img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/project/about-slide-5.jpg" alt="">
+              </div>
+              <div class="carousel__slide">
+                <img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/project/about-slide-6.jpg" alt="">
+              </div>
+              <div class="carousel__slide">
+                <img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/project/about-slide-7.jpg" alt="">
+              </div>
+              <div class="carousel__slide">
+                <img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/project/about-slide-8.jpg" alt="">
+              </div>
+              <div class="carousel__slide">
+                <img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/project/about-slide-9.jpg" alt="">
+              </div>
+              <div class="carousel__slide">
+                <img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/project/about-slide-10.jpg" alt="">
+              </div>
+            {% endblock %}
+          {% endembed %}
+        </div>
+      </div>
+    </div>
+
+    {% markdown %}
+    ```twig.line-numbers
+    {% verbatim %}
+    <section class="vg-2 bg-gray">
+      <div class="container-lg">
+        <h2 class="type-h3 color-blue align-center mb-2">Our Commitment to Diversity, Equity & Inclusion</h2>
+
+        <p class="mb-2">Our agency values the strength of a diverse workforce and an informed approach to our culture, clients and people. To ensure this, we maintain an active task force within VMLY&R, called, Diversity, Equity, and Inclusion (DEI), whose mission is to guide, celebrate, and promote cultural literacy across our vast global network. Click through the below to get a flavor of our culture, our values and current initiatives.</p>
+
+        <div>
+          {% embed "_components/carousel.html" with {
+            "tnsOptions": {
+              autoHeight: true,
+              rewind: true,
+              controls: false,
+              responsive: {
+                568: {controls: true}
+              }
+            },
+            "counter": {
+              "hide": false,
+              "backdrop": false,
+              "inverted": false
+            },
+            "controls": {
+              "fixed": false
+            }
+          } %}
+            {% block carousel %}
+              <div class="carousel__slide">
+                <img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/project/about-slide-1.jpg" alt="">
+              </div>
+              <div class="carousel__slide">
+                <img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/project/about-slide-2.jpg" alt="">
+              </div>
+              <div class="carousel__slide">
+                <img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/project/about-slide-3.jpg" alt="">
+              </div>
+              <div class="carousel__slide">
+                <img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/project/about-slide-4.jpg" alt="">
+              </div>
+              <div class="carousel__slide">
+                <img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/project/about-slide-5.jpg" alt="">
+              </div>
+              <div class="carousel__slide">
+                <img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/project/about-slide-6.jpg" alt="">
+              </div>
+              <div class="carousel__slide">
+                <img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/project/about-slide-7.jpg" alt="">
+              </div>
+              <div class="carousel__slide">
+                <img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/project/about-slide-8.jpg" alt="">
+              </div>
+              <div class="carousel__slide">
+                <img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/project/about-slide-9.jpg" alt="">
+              </div>
+              <div class="carousel__slide">
+                <img src="https://vmlyr-projects.s3.us-east-2.amazonaws.com/style-guide-template-site/images/project/about-slide-10.jpg" alt="">
+              </div>
+            {% endblock %}
+          {% endembed %}
+        </div>
+      </div>
+    </section>
+    {% endverbatim %}
+    ```
+    {% endmarkdown %}
+  </section>
+  
+  <section class="container-xl">
+    <div class="vg-2 bg-gray">
+      <div class="container-xl">
+        <h2 class="type-h3 color-blue align-center mb-2">Learn More</h2>
+        <div class="align-center">
+          {{ button('Learn more about VMLY&amp;R', '', '', false, 'https://www.vmlyr.com', 'button--white-solid') }}  
+        </div>
+      </div>
+    </div>
+
+    {% markdown %}
+    ```twig.line-numbers
+    {% verbatim %}
+    <div class="vg-2 bg-gray">
+      <div class="container-xl">
+        <h2 class="type-h3 color-blue align-center mb-2">Learn More</h2>
+        <div class="align-center">
+          {{ button('Learn more about VMLY&amp;R', '', '', false, 'https://www.vmlyr.com', 'button--white-solid') }}  
+        </div>
+      </div>
+    </div>
+    {% endverbatim %}
+    ```
+    {% endmarkdown %}
+  </section>
+
+{% endblock %}

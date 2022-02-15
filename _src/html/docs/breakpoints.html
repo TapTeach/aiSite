@@ -1,0 +1,35 @@
+{#
+  Twig Templating!
+  Homepage: https://twig.symfony.com/
+  Docs: https://twig.symfony.com/doc/2.x/
+#}
+
+{% extends '_layouts/docs.html' %}
+{% set pageActiveTest = 'breakpoints' %}
+
+{% block content %}
+  <header class="container-xl">
+    <div class="sg-comments">
+      <h1 class="type-h3">Breakpoints</h1>
+      <ul>
+        <li>Breakpoints use the em() to create a responsive build.</li>
+        <li>Add responsive modifiers to trigger different column widths, sorting, or positioning by breakpoint <code>xs:, sm:, md:, lg:, xl:</code></li>
+        <li>Not all utilities use breakpoint modifiers. See each one in this guide to see if it is available.</li>
+      </ul>
+    </div>
+
+    {% markdown %}
+    ```twig.line-numbers
+    {% verbatim %}
+    xs: em(480)
+    sm: em(568)
+    md: em(768)
+    lg: em(980)
+    xl: em(1280)
+    gr: em(1450)
+    {% endverbatim %}
+    ```
+    {% endmarkdown %}
+  </header>
+
+{% endblock %}

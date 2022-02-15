@@ -1,0 +1,147 @@
+// ================================
+// Typography
+// ================================
+
+// --------------------------------
+// Font Family
+// --------------------------------
+
+.font-default {
+  font-family: $font-default;
+}
+
+.font-primary {
+  font-family: $font-primary;
+}
+
+.font-mono {
+  font-family: $font-mono;
+}
+
+// --------------------------------
+// Style
+// --------------------------------
+
+.italic {
+  font-style: italic;
+}
+
+.roman {
+  font-style: normal;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.normal-case {
+  text-transform: none;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.underline-none {
+  text-decoration: none;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px #000;
+}
+
+// --------------------------------
+// Whitespace & Wrapping
+// --------------------------------
+
+.whitespace-normal {
+  white-space: normal;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+.break-word {
+  word-wrap: break-word;
+}
+
+.break-normal {
+  word-wrap: normal;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// --------------------------------
+// Font weight
+// --------------------------------
+
+.font-light {
+  font-weight: $font-300;
+}
+
+.font-normal {
+  font-weight: $font-400;
+}
+
+.font-bold {
+  font-weight: $font-700;
+}
+
+.font-black {
+  font-weight: $font-900;
+}
+
+// --------------------------------
+// Lists
+// --------------------------------
+
+.list-reset {
+  padding: 0;
+  list-style-type: none;
+}
+
+// --------------------------------
+// Font Size
+// --------------------------------
+
+// loop through types
+@each $label, $breakpoints in $type-sets {
+  .type-#{$label},
+  %type-#{$label} {
+    @each $breakpoint, $options in $breakpoints {
+      @if $breakpoint == 'base' {
+        @each $attr, $value in $options {
+          #{$attr}: $value;
+        }
+      } @else {
+        @include media('>=#{$breakpoint}') {
+          @each $attr, $value in $options {
+            #{$attr}: $value;
+          }
+        }
+      }
+    }
+  }
+}
+
+.type-accents,
+.type-headlineSection {
+  @extend %headline-accents;
+}

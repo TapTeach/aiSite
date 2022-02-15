@@ -1,0 +1,23 @@
+<section class="quote {{classes|default('vg-3 bg-blue color-white bg-cover bg-center bg-no-repeat')}}" style="background-image: url('{{bgImgFile}}');">
+  <div class="{{container|default('container-xl')}}">
+    <div class="quote__border {% if not headingText and not headingIcon %}quote__noHeading{% endif %} vg-3">
+      {% if headingText %}
+        <p class="quote__heading align-center"><span>{{headingText}}</span></p>
+      {% endif %}
+      {% if headingIcon %}
+        <div class="quote__heading quote__icon align-center">
+          {{ icon(headingIcon.name, headingIcon.color, headingIcon.size) }}
+        </div>
+      {% endif %}
+
+      <div class="quote__copyContainer">
+        {% if text %}
+          <p class="quote__text align-center {% if textSub %}pb-3{% endif %}">{{text}}</p>
+        {% endif %}
+        {% if textSub %}
+          <p class="quote__copySm color-white align-center">{{textSub}}</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
