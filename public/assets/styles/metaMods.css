@@ -2,4 +2,7 @@
 .navOverlay {background-color: rgba(13, 6, 28, 0.8);}
 .headerNav__title {color:#886db7}
 .type-accents::before, .type-headlineSection::before, .type-accents::after, .type-headlineSection::after {content:''}
-
+.carousel__hero .carousel__slideBox {background-color: #886db7;}
+.faq__row .dt__expandable:hover, .faq__row .dt__expandable:active, .faq__row .dt__expandable:focus, .faq__row dt.is-expanded {background-color: #886db7;}
+.faq__row dt {border-left: 2px solid #886db7;border-right: 2px solid #886db7;}
+a, .faq__row dt .dt__icon {color: #886db7;}
