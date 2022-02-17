@@ -6,3 +6,6 @@
 .faq__row .dt__expandable:hover, .faq__row .dt__expandable:active, .faq__row .dt__expandable:focus, .faq__row dt.is-expanded {background-color: #886db7;}
 .faq__row dt {border-left: 2px solid #886db7;border-right: 2px solid #886db7;}
 a, .faq__row dt .dt__icon {color: #886db7;}
+.contentStripes__img {border: 5px solid white;box-shadow: 2px 1px 62px -15px rgba(25,10,56,0.79);
+-webkit-box-shadow: 2px 1px 62px -15px rgba(25,10,56,0.79);
+-moz-box-shadow: 2px 1px 62px -15px rgba(25,10,56,0.79);}
