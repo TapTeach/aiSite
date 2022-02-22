@@ -11,3 +11,4 @@ a, .faq__row dt .dt__icon {color: #172343;}
 .dt__expandable:hover .color-onyx-60, .is-expanded p.color-onyx-60 {color: white;}
 h1, h3.type-headlineSection {font-family: "snowflakeinline",sans-serif;}
 h1 .type-h3 {font-family: "yrthree",sans-serif;}
+#metaMonday .container-xl {padding-left: 0px;padding-right: 0px;}
